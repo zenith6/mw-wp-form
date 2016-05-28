@@ -181,6 +181,8 @@ class MW_WP_Form_CSV {
 		if ( isset( $args['posts_per_page'] ) ) {
 			unset( $args['posts_per_page'] );
 		}
+		
+		$args['posts_per_page'] = $this->get_posts_per_page();
 
 		return $args;
 	}
